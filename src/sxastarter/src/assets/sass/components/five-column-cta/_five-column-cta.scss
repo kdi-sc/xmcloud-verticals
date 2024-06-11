@@ -1,0 +1,34 @@
+.five-column-cta {
+  font-size: 20px;
+
+  @include respond-to(mobile-large) {
+    padding: 0 $size-padding;
+  }
+
+  div.row {
+    @include respond-to(mobile-large) {
+      margin: 0 calc(-1 * $size-padding);
+    }
+  }
+
+  div.col {
+    text-align: center;
+
+    @include respond-to(mobile-large) {
+      padding: 0 $size-padding;
+    }
+  }
+
+  .image-container {
+    aspect-ratio: 1 / 1;
+    background-color: var(--bg-main);
+    padding: 2em;
+    border-radius: 100%;
+    margin-bottom: 20px;
+  }
+
+  .text-container {
+    font-weight: bold;
+    text-align: center;
+  }
+}

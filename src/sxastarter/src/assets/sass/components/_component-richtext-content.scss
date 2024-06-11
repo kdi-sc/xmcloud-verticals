@@ -1,0 +1,22 @@
+@import 'src/assets/sass/abstracts/vars';
+@import 'src/assets/sass/abstracts/mixins';
+
+.content,
+.rich-text {
+  border: $rich-content-border;
+  overflow: hidden;
+
+  * {
+    max-width: 100%;
+  }
+
+  @import 'src/assets/sass/base/richtext';
+}
+
+.rich-text {
+  @import 'src/assets/sass/variants/rich-text';
+}
+
+.content {
+  @import 'src/assets/sass/variants/page-content';
+}
